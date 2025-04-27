@@ -1,6 +1,11 @@
 # Programação para internet
 ## Framework play
 
+### Anotações 
+Template == Views<br>
+Nome das pastas na views tem que ser igual ao nome dos controllers<br>
+Nome dos arquivos html na views tem que ser igual a nomemclatura das actions
+
 ### Comandos
 <ol>
   <li>Criar projeto: play new [nome do projeto]</li>
