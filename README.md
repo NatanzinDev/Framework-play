@@ -16,5 +16,5 @@ Nome dos arquivos html na views tem que ser igual a nomemclatura das actions
 ### Metodos para dados do form 
 <ol>
   <li><strong>.save </strong>| para salvar dado no banco</li>
-  <li><strong>.findAll</strong>| para buscar dados do banco e adiconar na lista</li>
+  <li><strong>.findAll </strong>| para buscar dados do banco e adiconar na lista</li>
 </ol>
