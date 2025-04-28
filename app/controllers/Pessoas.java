@@ -13,8 +13,12 @@ public class Pessoas extends Controller {
 		
 		p.nome = p.nome.toUpperCase();
 		p.email = p.email.toLowerCase();
-		
+		p.save();
 		
 		detalhar(p);
+	}
+	
+	public static void form() {
+		 render();
 	}
 }
