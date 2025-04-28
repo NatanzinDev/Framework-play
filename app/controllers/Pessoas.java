@@ -6,10 +6,15 @@ import play.mvc.Controller;
 public class Pessoas extends Controller {
 	
 	public static void detalhar(Pessoa p) {
-		 render();
+		 render(p);
 	}
 	
 	public static void salvar(Pessoa p) {
-		render(p);
+		
+		p.nome = p.nome.toUpperCase();
+		p.email = p.email.toLowerCase();
+		
+		
+		detalhar(p);
 	}
 }

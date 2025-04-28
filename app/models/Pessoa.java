@@ -1,6 +1,6 @@
 package models;
 
 public class Pessoa {
-	String email;
-	String nome;
+	public String email;
+	public String nome;
 }
