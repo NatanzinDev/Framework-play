@@ -17,4 +17,5 @@ Nome dos arquivos html na views tem que ser igual a nomemclatura das actions
 <ol>
   <li><strong>.save </strong>| para salvar dado no banco</li>
   <li><strong>.findAll </strong>| para buscar dados do banco e adiconar na lista</li>
+  <li><strong>? </strong>| usado na frente da variaveis do view para assumir que elas não vaão receber valor sem o id</li>
 </ol>
