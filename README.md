@@ -2,10 +2,12 @@
 ## Framework play
 
 ### Anotações 
+<ol>
 <li>Template == Views</li>
 <li>Nome das pastas na views tem que ser igual ao nome dos controllers</li>
 <li>Nome dos arquivos html na views tem que ser igual a nomemclatura das actions</li>
 <li>O arquivo route dentro da pasta conf controla as rotas de caminho e pode criar rotas personalizadas dentro delas</li>
+</ol>
 
 ### Comandos do play
 <ol>
