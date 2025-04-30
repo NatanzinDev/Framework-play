@@ -2,9 +2,10 @@
 ## Framework play
 
 ### Anotações 
-Template == Views<br>
-Nome das pastas na views tem que ser igual ao nome dos controllers<br>
-Nome dos arquivos html na views tem que ser igual a nomemclatura das actions
+<li>Template == Views</li>
+<li>Nome das pastas na views tem que ser igual ao nome dos controllers</li>
+<li>Nome dos arquivos html na views tem que ser igual a nomemclatura das actions</li>
+<li>O arquivo route dentro da pasta conf controla as rotas de caminho e pode criar rotas personalizadas dentro delas</li>
 
 ### Comandos do play
 <ol>
@@ -17,5 +18,5 @@ Nome dos arquivos html na views tem que ser igual a nomemclatura das actions
 <ol>
   <li><strong>.save </strong>| para salvar dado no banco</li>
   <li><strong>.findAll </strong>| para buscar dados do banco e adiconar na lista</li>
-  <li><strong>? </strong>| usado na frente da variaveis do view para assumir que elas não vaão receber valor sem o id</li>
+  <li><strong>? </strong>| usado na frente da variaveis do view para assumir que elas não vão receber valor sem o id</li>
 </ol>
