@@ -7,6 +7,7 @@
 <li>Nome das pastas na views tem que ser igual ao nome dos controllers</li>
 <li>Nome dos arquivos html na views tem que ser igual a nomemclatura das actions</li>
 <li>O arquivo route dentro da pasta conf controla as rotas de caminho e pode criar rotas personalizadas dentro delas</li>
+<li>localhost:9000/documentation para ver a documentação do play</li>
 </ol>
 
 ### Comandos do play
