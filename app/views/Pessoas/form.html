@@ -1,11 +1,23 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'Formulário' /}
+
+<h1>Cadastro de Pessoa</h1>
+<br>
 
 <form action="@{Pessoas.salvar}">
-
-	Nome: <input type="text" name="p.nome"><br>
-	Email: <input type="text" name="p.email"><br>
-	<button type="submit">Enviar</button>
-	
-	
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nome</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="p.nome">
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="p.email">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+

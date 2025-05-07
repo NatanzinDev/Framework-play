@@ -11,8 +11,14 @@ public class Pessoas extends Controller {
 	
 	public static void salvar(Pessoa p) {
 		
-		p.nome = p.nome.toUpperCase();
-		p.email = p.email.toLowerCase();
+		
+		if(p.nome != null) {
+			p.nome = p.nome.toUpperCase();
+		}
+		if(p.email != null) {
+			p.email = p.email.toLowerCase();
+		}
+		
 		p.save();
 		
 		detalhar(p);
