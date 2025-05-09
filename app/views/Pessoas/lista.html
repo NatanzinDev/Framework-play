@@ -1,0 +1,31 @@
+#{extends 'main.html' /}
+#{set title:'Lista de pessoas' /}
+
+
+  
+
+
+
+	
+
+<table class="table">
+#{list items: lista, as:'p'}
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>${p?.nome} </td>
+      <td>${p?.email}</td>
+      <td><a href="@{Pessoas.editar(p.id)}">Editar</a> - <a href="@{Pessoas.excluir(p.id)}">Excluir </a></td>
+    </tr>
+    
+  </tbody>
+  #{/list}
+</table>
