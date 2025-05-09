@@ -24,3 +24,10 @@
   <li><strong>.findAll </strong>| para buscar dados do banco e adiconar na lista</li>
   <li><strong>? </strong>| usado na frente da variaveis do view para assumir que elas não vão receber valor sem o id</li>
 </ol>
+
+## Assuntos cobrados
+<ol>
+  <li>Montagem de querry string </li>
+  <li>CRUD</li>
+  <li>Diferença dos methodos get e post</li>
+</ol>
