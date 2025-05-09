@@ -23,9 +23,12 @@
       <th scope="row"></th>
       <td>${p?.nome} </td>
       <td>${p?.email}</td>
-      <td><a href="@{Pessoas.editar(p.id)}">Editar</a> - <a href="@{Pessoas.excluir(p.id)}">Excluir </a></td>
+      <td><a class="btn btn-primary" href="@{Pessoas.editar(p.id)}">Editar</a> - <a class="btn btn-primary" href="@{Pessoas.excluir(p.id)}">Excluir </a></td>
     </tr>
     
   </tbody>
   #{/list}
 </table>
+#{else}
+	<p></p>
+#{/else}
