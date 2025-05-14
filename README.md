@@ -11,6 +11,7 @@
 <li>Nas views estrutura html padrão(head, dody) é herdada do main.html</li>
 <li>Se você for linkar algum arquivo css ou js sempre deve estar em volta de aspas simples('') Ex: src="@{'public/stylesheets/style.css'}"</li>
 <li>A anotação @Transient dentro do Model serve para que o atributo anotado com ele não seja criado no banco de dados, ele servira apenas como um valor de passagem.</li>
+<li> https://www.playframework.com/documentation/1.5.x/cheatsheet/commandLine link da documentação do play</li>
 </ol>
 
 ### Comandos do play
