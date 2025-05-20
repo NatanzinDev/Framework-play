@@ -30,6 +30,12 @@
   <li><strong>? </strong>| usado na frente da variaveis do view para assumir que elas não vão receber valor sem o id</li>
 </ol>
 
+### Montagem de query string
+<ol>
+  <li>depois do final da url se passa o "?" e em sequência o "name do input" seguido do atribuido de valor "=" mais o determinado valor </li>
+  <li>E para passar mais de um valor se usa "&" Exemplo: ?email=valoremail&senha=valorsenha</li>
+</ol>
+
 ## Assuntos cobrados
 <ol>
   <li>Montagem de querry string </li>
