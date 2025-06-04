@@ -4,9 +4,12 @@
 
   
 
-
-
-	
+	<div class="container">
+  <form class="d-flex shadow-sm p-3 bg-white rounded" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar pessoa..." aria-label="Buscar" name="busca">
+          <button class="btn btn-primary" type="submit">Buscar</button>
+   </form>
+	</div>
 
 <table class="table">
 #{list items: lista, as:'p'}
@@ -23,12 +26,13 @@
       <th scope="row"></th>
       <td>${p?.nome} </td>
       <td>${p?.email}</td>
-      <td><a class="btn btn-primary" href="@{Pessoas.editar(p.id)}">Editar</a> - <a class="btn btn-primary" href="@{Pessoas.excluir(p.id)}">Excluir </a></td>
+      <td><a class="btn btn-primary" href="@{Pessoas.editar(p.id)}">Editar</a> - <a class="btn btn-danger" href="@{Pessoas.excluir(p.id)}">Excluir </a></td>
     </tr>
     
   </tbody>
   #{/list}
 </table>
 #{else}
-	<p></p>
+	<p>Não há pessoas cadastras ainda.</p>
+	<a class="btn btn-primary" href="@{Pessoas.form}" >Cadastre agora</a>
 #{/else}

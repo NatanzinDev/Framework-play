@@ -1,6 +1,12 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
+#{if p}
+	#{set title:'Editar pessoa' /}
+#{/if}
+#{else}
+	#{set title:'Cadastrar pessoa' /}
+#{/else}
 
 <div class="formulario">
 <form action="@{Pessoas.salvar}" >
@@ -19,3 +25,4 @@
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 </div>
+

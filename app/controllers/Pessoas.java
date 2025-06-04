@@ -12,8 +12,17 @@ public class Pessoas extends Controller {
 		render(p);
 	}
 
-	public static void lista() {
-		List<Pessoa> lista = Pessoa.findAll();
+	public static void lista(Boolean a) {
+		String busca = params.get("busca");
+	
+		List<Pessoa> lista;
+		
+		if(busca == null) {
+			lista = Pessoa.findAll();
+		}else {
+			lista = Pessoa.find("select p from Pessoa p where p.nome like ?1 or p.email like ?1", "%"+busca+"%").fetch();
+		}
+		
 		render(lista);
 
 	}
@@ -26,11 +35,21 @@ public class Pessoas extends Controller {
 			p.email = p.email.toLowerCase();
 		}
 		
-	 
-		p.save();
+		String msg = "";
+		boolean confirma = false;
+		try {
+			p.save();
+			 confirma = true;
+			 
+		}catch(Exception e ) {
+			confirma = false;
+		}finally {
+			lista(confirma);
+		}
+		
 		
 
-		lista();
+		
 	}
 
 	public static void form() {
@@ -39,8 +58,18 @@ public class Pessoas extends Controller {
 
 	public static void excluir(long id) {
 		Pessoa p = Pessoa.findById(id);
-		p.delete();
-		lista();
+		
+		Boolean a = true;
+		
+		try {
+			p.delete();
+			a = true;
+		}catch(Exception e ) {
+			a = false;
+		}finally {
+			lista(a);
+		}
+	
 	}
 
 	public static void editar(long id) {
