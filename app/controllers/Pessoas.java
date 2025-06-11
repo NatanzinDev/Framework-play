@@ -39,7 +39,7 @@ public class Pessoas extends Controller {
 
 		p.save();
 
-		lista(null);
+		detalhar(p);
 
 	}
 
