@@ -42,3 +42,22 @@
   <li>CRUD</li>
   <li>Diferença dos methodos get e post</li>
 </ol>
+
+## Estruturas de controle e repetição
+<ol>
+  <li>
+    if-else
+  </li>
+  #{if condicao}
+    #{/if}
+#{else if outraCondicao}
+    #{/else if}
+#{else}
+    #{/else}
+
+  <li>
+    list
+  </li>
+  #{list items:minhaColecao, as:'item'}
+    <p>${item.propriedade}</p>#{/list}
+</ol>
