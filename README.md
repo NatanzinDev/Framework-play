@@ -13,6 +13,13 @@
 <li>A anotação @Transient dentro do Model serve para que o atributo anotado com ele não seja criado no banco de dados, ele servira apenas como um valor de passagem.</li>
 <li> https://www.playframework.com/documentation/1.5.x/cheatsheet/commandLine link da documentação do play</li>
 <li> métodos com getNomedoatributo no Model vão ser considerados como atributo no template, incluse é melhor para fazer operações matemáticas por exemplo do que diretamente na application ou na view </li>
+<li> 
+  A cardinalidade correponde ao final da notação do model
+  <ul>
+    <li>@ManyToOne - vai ser atributo único</li>
+     <li>@OneToOne - o atributo vai ser em forma de Lista</li>
+  </ul>
+</li>
 </ol>
 
 ### Comandos do play
