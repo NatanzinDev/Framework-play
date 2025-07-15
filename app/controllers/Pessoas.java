@@ -2,7 +2,9 @@ package controllers;
 
 import java.util.List;
 
+import models.Departamento;
 import models.Pessoa;
+import models.Status;
 import play.db.jpa.JPABase;
 import play.mvc.Controller;
 
@@ -18,9 +20,12 @@ public class Pessoas extends Controller {
 		List<Pessoa> lista;
 
 		if (busca == null) {
-			lista = Pessoa.findAll();
+			lista = Pessoa.find("status <> ?1", Status.INATIVO).fetch();
 		} else {
-			lista = Pessoa.find("lower(nome) like ?1 or lower(email) like ?1", "%" + busca + "%").fetch();
+			lista =  Pessoa.find("(lower(nome) like ?1 "
+					+ "or lower(email) like ?1) and status <> ?2",
+					"%" + busca.toLowerCase() + "%",
+					Status.INATIVO).fetch();
 		}
 
 		render(lista);
@@ -35,7 +40,7 @@ public class Pessoas extends Controller {
 			p.email = p.email.toLowerCase();
 		}
 
-		
+		p.status = Status.ATIVO;
 
 		p.save();
 
@@ -44,19 +49,22 @@ public class Pessoas extends Controller {
 	}
 
 	public static void form() {
-		render();
+		List<Departamento> dps =  Departamento.findAll();
+		render(dps);
 	}
 
 	public static void excluir(long id) {
-		Pessoa p = Pessoa.findById(id);
-		p.delete();
+		Pessoa pessoa = Pessoa.findById(id);
+		pessoa.status = Status.INATIVO;
+		pessoa.save();
 		lista(null);
 
 	}
 
 	public static void editar(long id) {
+		List<Departamento> dps =  Departamento.findAll();
 		Pessoa p = Pessoa.findById(id);
-		renderTemplate("Pessoas/form.html", p);
+		renderTemplate("Pessoas/form.html", p, dps);
 	}
 
 }

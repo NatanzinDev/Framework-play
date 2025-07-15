@@ -6,9 +6,15 @@ Email ${p.email}
 
 <div class="jumbotron">
   <h1 class="display-4">Informações da pessoa</h1>
-  <p class="lead">Nome ${p.nome}</p>
+  <p class="lead">Nome: ${p.nome}</p>
   <hr class="my-4">
-  <p class="lead">Email ${p.email}</p>
+  <p class="lead">Email: ${p.email}</p>
+   <hr class="my-4">
+  <p class="lead">Departamento: ${p.departamento}</p>
+   <hr class="my-4">
+  <p class="lead">Data de Nascimento: ${p.dataNascimento}</p>
+  <hr class="my-4">
+  <p class="lead">Idade: ${p.idade}</p>
   <a class="btn btn-primary btn-lg" href="@{Pessoas.lista}" role="button">Lista de pessoas</a>
    <a class="btn btn-primary btn-lg" href="@{Pessoas.form}" role="button">Cadastrar pessoa</a>
 </div>
