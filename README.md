@@ -20,6 +20,7 @@
      <li>@OneToOne - o atributo vai ser em forma de Lista</li>
   </ul>
 </li>
+<li>A anotação @Transient serve para ignorar atributos do model, o atributo com essa anotação não será salvo no banco.</li>
 </ol>
 
 ### Comandos do play
