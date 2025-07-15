@@ -25,6 +25,18 @@
     <label for="exampleInputPassword1">Data de Nascimento:</label>
     <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Digite a data de nascimento" name="p.dataNascimento" value="${p?.dataNascimento}">
   </div>
+  
+  <div class="mb-3">
+		<label class="form-label">Departamento:</label>
+		<select class="form-select" name="pessoa.departamento.id">
+			#{list items:dps, as:'d'}
+				<option value="${d.id}" 
+					${d.id == p?.departamento?.id ? 'selected' : ''}>
+						${d.nome}
+				</option>
+			#{/list}
+		</select>
+	</div>
 
  	<input class="btn btn-primary" type="submit"
 		value="${p ? 'Editar':'Cadastrar'}" />
