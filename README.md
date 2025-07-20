@@ -8,6 +8,7 @@
 <li>Nome dos arquivos html na views tem que ser igual a nomemclatura das actions</li>
 <li>O arquivo route dentro da pasta conf controla as rotas de caminho e pode criar rotas personalizadas dentro delas</li>
 <li>localhost:9000/documentation para ver a documentação do play</li>
+<li>No arquivo routes a Home Page define a rota principal, vai direcionar pra página selecionada quando você digitar localhost:9000</li>
 <li>Nas views estrutura html padrão(head, dody) é herdada do main.html</li>
 <li>Se você for linkar algum arquivo css ou js sempre deve estar em volta de aspas simples('') Ex: src="@{'public/stylesheets/style.css'}"</li>
 <li>A anotação @Transient dentro do Model serve para que o atributo anotado com ele não seja criado no banco de dados, ele servira apenas como um valor de passagem.</li>
