@@ -24,6 +24,7 @@
 <li>A anotação @Transient serve para ignorar atributos do model, o atributo com essa anotação não será salvo no banco.</li>
 <li>Preferir o usar Long ao invés de long, pois o long com L minusculo se não receber valor adota zero como valor padrão e não fica uma boa prática comparar com zero algo que não inicializado</li>
 <li>Não repetir o nome de variáveis de laços de repetição utilizados na mesma view</li>
+<li>Na parte de relacionamento de entidades buscar começar tralhando com o model</li>
 </ol>
 
 ### Comandos do play
