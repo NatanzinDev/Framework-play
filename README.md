@@ -27,6 +27,7 @@
 <li>Na parte de relacionamento de entidades buscar começar tralhando com o model</li>
 <li>@ManyToMany(mappedBy="nomedoatributodorelacionamentonaoutraclasse") o mappedBy serve para definir quem vai ser o atributo fraco da relação, é obrigatório na relação ManyToMany</li>
 <li>Sempre que modificar alguma coisa no inicializador reinicie a aplicação para atualizar os valores no banco de dados</li>
+<li>Comandos flash duram apenas duas requisições</li>
 </ol>
 
 ### Comandos do play
