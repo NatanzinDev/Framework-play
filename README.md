@@ -75,4 +75,20 @@
   </li>
   #{list items:minhaColecao, as:'item'}
     <p>${item.propriedade}</p>#{/list}
+
+  <li>Verificação do flash</li>
+  	   
+         #{if flash.error}
+					  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+					    <strong>Algo deu errado:</strong> ${flash.error}
+					    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					  </div>
+					#{/if}
+		    		
+		    	#{if flash.success}
+					  <div class="alert alert-success alert-dismissible fade show" role="alert">
+					    <strong>Sucesso!</strong> ${flash.success}
+					    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					  </div>
+					#{/if}
 </ol>
