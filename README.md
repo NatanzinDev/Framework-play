@@ -95,6 +95,7 @@
 </ol>
 
 ## Login 
-<li> 
-	<ol>A session para salvar no play, a preferência de tipos que se deve salvar nela é string pois é o único que você consegue recuperar</ol>
-</li>
+<ol> 
+	<li>A session para salvar no play, a preferência de tipos que se deve salvar nela é string pois é o único que você consegue recuperar</li>
+	<li>Para proteger uma classe com sua classe de segurança ele deve conter a @With(nomedaclass.clas)</li>
+</ol>
