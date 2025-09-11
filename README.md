@@ -28,6 +28,7 @@
 <li>@ManyToMany(mappedBy="nomedoatributodorelacionamentonaoutraclasse") o mappedBy serve para definir quem vai ser o atributo fraco da relação, é obrigatório na relação ManyToMany</li>
 <li>Sempre que modificar alguma coisa no inicializador reinicie a aplicação para atualizar os valores no banco de dados</li>
 <li>Comandos flash duram apenas duas requisições</li>
+	
 </ol>
 
 ### Comandos do play
@@ -92,3 +93,8 @@
 					  </div>
 					#{/if}
 </ol>
+
+## Login 
+<li> 
+	<ol>A session para salvar no play, a preferência de tipos que se deve salvar nela é string pois é o único que você consegue recuperar</ol>
+</li>
