@@ -98,4 +98,19 @@
 <ol> 
 	<li>A session para salvar no play, a preferência de tipos que se deve salvar nela é string pois é o único que você consegue recuperar</li>
 	<li>Para proteger uma classe com sua classe de segurança ele deve conter a @With(nomedaclass.clas)</li>
+	<li>session.clear() limpar toda a sessão do usuario logado</li>
+	<li>session.put("chave", dadosarmazenados), serve para armazenar os dados desejados do usuario logado</li>
+</ol>
+
+### Passos da criação do login
+<ol>
+	<li>Editar model com email e senha</li>
+	<li>Deixar pelo menos um usuario já cadastrado pelo inicializador - Usuario root</li>
+	<li>Controlador de login - Apresentar form, lógica e deslogar</li>
+	<li>Form de login, que aponta para action de logar</li>
+	<li>Lógica da action de logar, pequisa por email e senha igual os parametros informados na action - sess</li>
+	<li>Criação de interceptador("classe de segurança") - faz a verificação de a sessão está com a chave de sessão</li>
+	<li>Anotar classe desejadas com @With, que são classe que vão ser protegidas</li>
+	<li>Uso dos dados no session['chave'] nos templates</li>
+	<li>Lógica de logout</li>
 </ol>
