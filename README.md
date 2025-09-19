@@ -100,6 +100,7 @@
 	<li>Para proteger uma classe com sua classe de segurança ele deve conter a @With(nomedaclass.clas)</li>
 	<li>session.clear() limpar toda a sessão do usuario logado</li>
 	<li>session.put("chave", dadosarmazenados), serve para armazenar os dados desejados do usuario logado</li>
+	<li> A palavra-chave @interface (com o @ na frente) é usada para criar sua própria anotação em Java. O nome que você dá a ela, neste caso Administrador, é como você vai usá-la no resto do seu código (ex: @Administrador).</li>
 </ol>
 
 ### Passos da criação do login
