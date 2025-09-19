@@ -101,6 +101,9 @@
 	<li>session.clear() limpar toda a sessão do usuario logado</li>
 	<li>session.put("chave", dadosarmazenados), serve para armazenar os dados desejados do usuario logado</li>
 	<li> A palavra-chave @interface (com o @ na frente) é usada para criar sua própria anotação em Java. O nome que você dá a ela, neste caso Administrador, é como você vai usá-la no resto do seu código (ex: @Administrador).</li>
+	<li>Target - Define onde a sua anotação pode ser usada no código</li>
+	<li>ElementType.METHOD - Permite que você coloque a anotação em cima de um método.</li>
+	<li>ElementType.TYPE -  Permite que você coloque a anotação em cima de uma classe ou interface.</li>
 </ol>
 
 ### Passos da criação do login
