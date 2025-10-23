@@ -126,4 +126,6 @@
 	<li>A importação tem que ser feita do play.data.validation</li>
 	<li>@MinSize(valor) e MAxSize(Valor) serva para anotar a quantidade de caracteres que o campo deve ter</li>
 	<li>Evitar trabalhar com tipos primitivos na validação.</li>
+	<li>@Email anotação para validar campo de email</li>
+	<li>@Valid serve para fazer a validação do no controler, é colocado na assinatura da action antes do objeto que lhe refere</li>
 </ol>
