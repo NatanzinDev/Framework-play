@@ -122,4 +122,6 @@
 ### Validação 
 <ol>
 	<li>@Required anotação para campos que são obrigatórios</li>
+	<li>@Min e @Max anotar valores minimo e máximo dos campos</li>
+	<li>A importação tem que ser feita do play.data.validation</li>
 </ol>
