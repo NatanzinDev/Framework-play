@@ -129,4 +129,5 @@
 	<li>@Email anotação para validar campo de email</li>
 	<li>@Valid serve para fazer a validação do no controler, é colocado na assinatura da action antes do objeto que lhe refere</li>
 	<li>@Equals(valorcomparado) serve para comparar valor de dois campos para na validação sejam iguais</li>
+	<li>O arquivo messages no diretorio conf serve para definir mensagens prontas que você pode usar depois</li>
 </ol>
