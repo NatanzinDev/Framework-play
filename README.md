@@ -131,4 +131,5 @@
 	<li>@Equals(valorcomparado) serve para comparar valor de dois campos para na validação sejam iguais</li>
 	<li>O arquivo messages no diretorio conf serve para definir mensagens prontas que você pode usar depois</li>
 	<li>Não adiante usar @MinSize em campos criptografados, já que eles vão sempre aumentar de tamanho</li>
+	<li>addErros e removeErros pode ser usado para adicionar ou remover erros que podem ser criados por você no validation. </li>
 </ol>
