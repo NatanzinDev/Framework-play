@@ -128,4 +128,5 @@
 	<li>Evitar trabalhar com tipos primitivos na validação.</li>
 	<li>@Email anotação para validar campo de email</li>
 	<li>@Valid serve para fazer a validação do no controler, é colocado na assinatura da action antes do objeto que lhe refere</li>
+	<li>@Equals(valorcomparado) serve para comparar valor de dois campos para na validação sejam iguais</li>
 </ol>
