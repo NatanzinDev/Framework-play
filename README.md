@@ -125,4 +125,5 @@
 	<li>@Min(valor) e @Max(valor) anotar valores minimo e máximo dos campos</li>
 	<li>A importação tem que ser feita do play.data.validation</li>
 	<li>@MinSize(valor) e MAxSize(Valor) serva para anotar a quantidade de caracteres que o campo deve ter</li>
+	<li>Evitar trabalhar com tipos primitivos na validação.</li>
 </ol>
