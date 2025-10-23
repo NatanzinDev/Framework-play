@@ -118,3 +118,8 @@
 	<li>Uso dos dados no session['chave'] nos templates</li>
 	<li>Lógica de logout</li>
 </ol>
+
+### Validação 
+<ol>
+	<li>@Required anotação para campos que são obrigatórios</li>
+</ol>
