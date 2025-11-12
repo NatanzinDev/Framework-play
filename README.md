@@ -134,3 +134,5 @@
 	<li>addErros e removeErros pode ser usado para adicionar ou remover erros que podem ser criados por você no validation. </li>
 	<li>validation.keep(); Salva a coleção de erros para a próxima ação</li>
 </ol>
+
+### AJAX - Asynchronous JavaScript and XML, ou JavaScript e XML Assíncronos
