@@ -135,4 +135,4 @@
 	<li>validation.keep(); Salva a coleção de erros para a próxima ação</li>
 </ol>
 
-### AJAX - Asynchronous JavaScript and XML, ou JavaScript e XML Assíncronos
+## AJAX - Asynchronous JavaScript and XML, ou JavaScript e XML Assíncronos
