@@ -135,5 +135,10 @@
 	<li>validation.keep(); Salva a coleção de erros para a próxima ação</li>
 </ol>
 
+### Máscara nos campos
+<ol>
+	<li>O arquivo de download do jquery deve ser colocado na pasta javascript, o mesmo vale para o arquivo das mascaras</li>
+</ol>
+
 ## AJAX - Asynchronous JavaScript and XML, ou JavaScript e XML Assíncronos
 AJAX é uma técnica que permite ao seu navegador comunicar-se com o servidor em segundo plano, sem precisar recarregar a página inteira.
