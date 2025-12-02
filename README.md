@@ -142,3 +142,10 @@
 
 ## AJAX - Asynchronous JavaScript and XML, ou JavaScript e XML Assíncronos
 AJAX é uma técnica que permite ao seu navegador comunicar-se com o servidor em segundo plano, sem precisar recarregar a página inteira.
+
+<ol>
+	<li>Em formulários é necessário que pare atualização de página natural do form diretamente no javascript por meio do addEventListener("submit", fuction(Event){
+		event.preventDefault();
+})
+	</li>
+</ol>
