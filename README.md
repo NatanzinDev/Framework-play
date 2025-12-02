@@ -148,4 +148,7 @@ AJAX é uma técnica que permite ao seu navegador comunicar-se com o servidor em
 		event.preventDefault();
 })
 	</li>
+	<li>Todos os seletores em jQuery iniciam com o sinal de dólar e
+parênteses: $()</li>
+	<li>Funciona com os mesmo seletores do css . para class e # para id</li>
 </ol>
