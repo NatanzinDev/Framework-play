@@ -143,6 +143,7 @@
 ### Upload
 <ol>
 	<li>Form que vão fazer upload tem que trabalhar com o metodo POST</li>
+	<li>O form tem que conter o enctype="multipart/form-data"</li>
 </ol>
 
 ## AJAX - Asynchronous JavaScript and XML, ou JavaScript e XML Assíncronos
